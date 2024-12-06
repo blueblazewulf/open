@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background and General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/PICs/Background.png'); /* Set background image */
+    background-size: cover; /* Ensure image covers the entire viewport */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    color: #f3f3f1; /* Light text color */
+    text-shadow: 1px 1px 2px #000; /* Add slight shadow for better readability */
+}
+
+/* Title Section Styling */
+header {
+    background-color: #03045e; /* Green background for the title */
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .site-title {
+    color: white; /* White text color */
+    font-size: 2.5em; /* Large font size */
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: rgba(51, 102, 153, 0.8); /* Semi-transparent blue */
+    overflow: hidden;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    height: 50px; /* Logo height */
+    margin-left: 20px;
+}
+
+nav a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 14px 20px; /* Spacing for links */
+    display: block;
+}
+
+nav a:hover {
+    background-color: #FF6F61; /* Highlight links on hover */
+}
+
+nav a.active {
+    background-color: #90e0ef; /* Active link styling */
+}
+
+/* Main Content Box */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top */
+    padding: 40px 20px; /* Add spacing */
+}
+
+.content-box {
+    background-color: #0077b6; /* Semi-transparent white box */
+    color: #ffffff; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    max-width: 800px; /* Limit content width */
+    text-align: center;
+}
+
+/* Dynamic Section Styling */
+.section {
+    display: none; /* Hide by default */
+    margin-top: 20px;
+    background-color: #03045e; /* Light gray background */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.section.active {
+    display: block; /* Show active section */
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #90e0ef; /* Button background color */
+    color: rgb(37, 37, 37);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF6F61; /* Button hover effect */
+}

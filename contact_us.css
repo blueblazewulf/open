@@ -1,0 +1,155 @@
+/* Background and General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/PICs/Background.png'); /* Same background image */
+    background-size: cover; /* Ensure image covers viewport */
+    background-repeat: repeat;
+    background-position: center;
+    height: 100vh;
+    color: #2124db; /* Light text color */
+    text-shadow: 1px 1px 2px #000; /* Add shadow for readability */
+}
+
+/* Title Section Styling */
+header {
+    background-color: #03045e; /* Green background for the title */
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .site-title {
+    color: white; /* White text color */
+    font-size: 2.5em; /* Large font size */
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgba(51, 102, 153, 0.8); /* Semi-transparent classic blue */
+    overflow: hidden;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    height: 50px; /* Logo height */
+    margin-left: 20px;
+}
+
+nav a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #FF6F61; /* Hover effect for links */
+}
+
+nav a.active {
+    background-color: #90e0ef; /* Active page indicator */
+}
+
+/* Content Box */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to top */
+    padding: 40px 20px; /* Add space around container */
+}
+
+.content-box {
+    background-color: #03045e; /* Transparent white background */
+    color: #fdfafa;
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Contact Information Styling */
+.contact-info {
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px;
+}
+
+.contact-info h2 {
+    color: #ebedef; /* Blue headings */
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.contact-info a {
+    color: #669933; /* Green links */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Form Styling */
+form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Add spacing between form fields */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%; /* Full width fields */
+    padding: 10px;
+    border: 1px solid #9e9797; /* Light gray border */
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: none; /* Disable resizing */
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #336699; /* Blue background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button[type="submit"]:hover {
+    background-color: #FF6F61; /* Red hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav a {
+        text-align: left;
+        padding: 10px;
+    }
+    nav img {
+        height: 40px; /* Smaller logo for mobile */
+    }
+}

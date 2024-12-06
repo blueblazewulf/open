@@ -1,0 +1,181 @@
+/* All background styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00B4D8;
+}
+
+/* Header Section Styling*/
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 80px;
+    background-color: #03045E;
+}
+
+.logo {/*to control the size of the logo for uniformity*/
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+
+h1, p {/*initial content in the header section*/
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Navigation Menu for hamburger section */
+.nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+/*hamburger menu options*/
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+/*to change hamburger menu options universal color*/
+.nav-links li a:hover {
+    background-color: #0077B6;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Hamburger Menu Icon*/
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.menu-icon .bar {
+    background-color: white;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+/* Products displayed Pricing */
+.highlight-product-price {
+    background-color: coral;
+    padding: 0.2em;
+    border-radius: 2px;
+    font-size: 1.2rem;
+}
+
+/* Controlling Product Section Responsiveness */
+.product-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    
+}
+
+.product-card {
+    background-color: #0077B6;
+    padding: 20px;
+    border: 2px solid #336699;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    max-width: 300px;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    color: black;
+    cursor: pointer;
+}
+
+.product-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Footer Ticker- to control the constant rotation on screen */
+.ticker {
+    position: relative;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #90E0EF;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ticker-text {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Mobile style- to fit smaller screens and create responsiveness on smaller screens*/
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #0077B6;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .product-card {/*direction of the products displayed*/
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    .product-img {
+        max-width: 200px;
+    }
+
+    .highlight-product-price {
+        font-size: 0rem;
+    }
+}

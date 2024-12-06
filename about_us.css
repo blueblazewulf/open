@@ -8,7 +8,7 @@
 /* Background and General Styling */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('/PICs/Background.png'); /* Set background image */
+    background-image: url('Background.png'); /* Set background image */
     background-size: cover; /* Ensure image covers the entire viewport */
     background-repeat: no-repeat;
     background-position: center;

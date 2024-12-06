@@ -1,7 +1,7 @@
 /* Background and General Styling */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('/PICs/Background.png'); /* Same background image */
+    background-image: url('Background.png'); /* Same background image */
     background-size: cover; /* Ensure image covers viewport */
     background-repeat: repeat;
     background-position: center;

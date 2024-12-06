@@ -2,7 +2,7 @@
 document.getElementById('header').innerHTML = `
     <div class="header-container">
         <!-- Logo -->
-        <img src="PICs/logo.jpg" alt="Retro-Scape Logo" class="logo">
+        <img src="logo.jpg" alt="Retro-Scape Logo" class="logo">
         <!-- Navigation Menu -->
         <nav>
             <div class="menu-icon" onclick="toggleMenu()">
